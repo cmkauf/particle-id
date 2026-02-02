@@ -1,0 +1,8 @@
+colors:
+- [208, 2, 27]
+- [65, 117, 5]
+- [74, 144, 226]
+names: [Alpha, Beta, Muons/High E e-]
+nc: 3
+train: ../Round1/images/train
+val: ../Round1/images/val
