@@ -10,6 +10,7 @@ model = YOLO('runs/detect/train6/weights/best.pt')  # Trained model
 
 # Open the webcam (0 = default camera)
 cap = cv2.VideoCapture(0)
+    # Debugging tip: If this code runs but you only see a black screen, try using camera '1'
 
 # Check if webcam is opened
 if not cap.isOpened():
@@ -26,7 +27,7 @@ while True:
     results = model(frame)
 
     # Visualize the results on the frame
-    annotated_frame = results[0].plot()  # This automatically draws boxes & labels
+    annotated_frame = results[0].plot()  # This automatically draws boxes & labels on the live video
 
     # Display the frame
     cv2.imshow("YOLOv8 Live Detection", annotated_frame)
