@@ -1,5 +1,4 @@
 ## Code to train model
-
 import cv2
 from ultralytics import YOLO
 
@@ -7,4 +6,6 @@ from ultralytics import YOLO
 model = YOLO('yolov8n.pt')
 
 # Train the model
-model.train(data='/Users/clairekaufman/Downloads/MAtomics-Data/data_config.yaml', epochs=50, imgsz=640)
+model.train(data='/EDIT/PATH/TO/data_config.yaml', epochs=50, imgsz=640)
+
+# Trained model will be saved locally to the same location
